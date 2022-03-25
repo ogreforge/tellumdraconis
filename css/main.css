@@ -1,0 +1,65 @@
+@charset "UTF-8";
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    overflow: hidden !important;
+}
+
+body .titlebar {
+    position: relative;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+}
+
+#mainMap {
+    overflow: hidden;
+    background-color: var(--map-background-color);
+}
+
+
+#center_map_button {
+    background-size: 2em;
+    background-image: url(img/compass.png);
+}
+
+.navbar_left {
+    display: flex;
+    top: 1.85em;
+    height: 100vh;
+    width: 3em;
+    flex-flow: column nowrap;
+    z-index: 16;
+    background-color: var(--main-color-lighter);
+}
+
+
+.navbar_left>.icon_button {
+    height: 5em;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--main-color-lighter);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
